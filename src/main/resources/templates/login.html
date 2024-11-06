@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - DigiBank</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+
+            <h2>Login to DigiBank</h2>
+            <form th:action="login" th:method="post" th:object="${loginInfo}">
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" th:field="*{email}" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" th:field="*{password}" required>
+                </div>
+
+                <button type="submit" class="auth-button">Login</button>
+            </form>
+            <p>Don't have an account? <a href="/signin">Sign Up</a></p>
+        </div>
+    </div>
+</body>
+</html>

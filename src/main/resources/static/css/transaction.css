@@ -1,0 +1,145 @@
+/* Transaction Page */
+.transaction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Align top to shift form upwards */
+    height: 100vh;
+    background-color: #1f1f1f; /* Secondary background */
+    padding: 2rem;
+}
+
+.transaction-container {
+    background-color: #2c2c2c; /* Form container background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: -50px; /* Slightly shift the form upwards */
+}
+
+.transaction-container h1 {
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-group label {
+    color: #e0e0e0;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    outline: none;
+    border-color: #bb86fc;
+}
+
+button.cta-button {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Table below the form */
+.transaction-table {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #2c2c2c; /* Same as form container */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.transaction-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+}
+
+.transaction-table th {
+    background-color: #3a3a3a;
+    font-weight: bold;
+}
+
+.transaction-table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+.transaction-table tr:hover {
+    background-color: #3a3a3a;
+}
+
+/* Prompt Section */
+.prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1f1f1f; /* Secondary background */
+    padding: 2rem;
+}
+
+.prompt-container {
+    background-color: #2c2c2c;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.prompt-container h1 {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.prompt-container p {
+    color: #b0b0b0;
+    margin-bottom: 1.5rem;
+}
+
+.prompt-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.prompt-buttons a {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #bb86fc;
+    color: #121212;
+    transition: background-color 0.3s;
+}
+
+.prompt-buttons a:hover {
+    background-color: #9b6bdc;
+}

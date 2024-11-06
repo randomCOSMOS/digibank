@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us | DigiBank</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">DigiBank$</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/transaction">Transaction</a></li>
+                <li><a href="/about">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons" th:switch="${status}">
+            <div th:case="false">
+                <a href="/login" class="login-button">Login</a>
+                <a href="/signin" class="signup-button">Sign Up</a>
+            </div>
+            <div th:case="true">
+                <a href="/signout" class="signup-button">Sign Out</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <div class="about-us-container">
+            <h1>About Us</h1>
+            <p>Welcome to DigiBank! This is a project developed as part of our academic course at SRM Institute of Science and Technology, Kattankulathur, Chennai.</p>
+            
+            <h2>Organisation:</h2>
+            <p>SRM Institute of Science and Technology (SRM KTR), Chennai, India</p>
+            
+            <h2>Creators:</h2>
+            <ul>
+                <li>Rajbir Biswas</li>
+                <li>Praket Kumar</li>
+                <li>Srijan Thakur</li>
+            </ul>
+            
+            <h2>Course:</h2>
+            <p>Second Year B.Tech AI (Artificial Intelligence)</p>
+        </div>
+    </section>
+</body>
+
+</html>
