@@ -29,7 +29,8 @@ public class BlockchainService {
         transaction.setDate(block.getTime());
         return blockchainRepo.save(transaction);
     }
-
+    
+    // Working Example: 0x676c438ec66d949ca2d4ded90ce32fc1fb4b74289898eb5e83deef7b915a498a
     public List<Transaction> getTransactionByEmail(String email){
         return blockchainRepo.findByEmail(email);
     }
